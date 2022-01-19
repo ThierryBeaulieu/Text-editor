@@ -8,6 +8,7 @@
     --dark-blue-shadow: rgb(37, 37, 37);
     --semi-dark-blue: rgb(70, 106, 122);
     --darker-blue: rgb(52, 74, 85);
+    --pale-blue: rgb(93, 144, 167);
 }
 
 * {
@@ -51,6 +52,11 @@ nav ul li h1 a {
     resize: none;
     color: white;
     background-color: var(--darker-blue);
+    border: none;
+}
+
+.coutour-border-editor {
+    border: 3px solid var(--pale-blue);
 }
 
 .text:focus {
@@ -58,8 +64,11 @@ nav ul li h1 a {
   }
 
 .text-editor-lines-numbers.text {
+    text-align: center;
+    border-right: 3px solid var(--pale-blue);
     
 }
 
 .text-editor-lines-text.text {
+    text-align:justify;
 }

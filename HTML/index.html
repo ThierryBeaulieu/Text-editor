@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="../CSS/styles.css">
 
-    <title>Your very own text editor</title>
+    <title>Your text editor</title>
 </head>
 
     <header>
@@ -33,32 +33,11 @@
     </header>
 
     <body>
-
-        <table style="width: 100%">
-            <tr style="height: 20px;"></tr>
-            <tr>
-                <th width="40px"></th>
-                <th></th>
-                <th></th>
-            </tr>
-            <tr>
-                <th></th>
-                <th>
-                    <div class="text-editor-container">
-                        <textarea class="text-editor-lines-numbers text" rows="35" cols="1" readonly>
-                        1
-                        </textarea>
-                        <textarea class="text-editor-lines-text text" cols="60">
-                            something
-                        </textarea>
-                    </div>
-                </th>
-                <th>
-
-                </th>
-            </tr>
-
-        </table>
+        <div class="text-editor-container">
+            <textarea class="text-editor-lines-numbers text" rows="35" cols="1" readonly>1</textarea>
+            <textarea class="text" rows="1" cols="1"></textarea>
+            <textarea class="text-editor-lines-text text" cols="30">something</textarea>
+        </div>
     </body>
 
     <footer>
