@@ -4,9 +4,10 @@
 */
 
 :root {
-    --dark-blue: rgb(19, 39, 49);
-    --dark-blue-shadow: rgb(11, 23, 29);
-    --semi-dark-blue: rgb(32, 58, 73);
+    --dark-blue: rgb(46, 58, 63);
+    --dark-blue-shadow: rgb(37, 37, 37);
+    --semi-dark-blue: rgb(70, 106, 122);
+    --darker-blue: rgb(52, 74, 85);
 }
 
 * {
@@ -40,4 +41,25 @@ nav ul li a {
 
 nav ul li h1 a {
     font-weight: 100;
+}
+
+.text-editor-container {
+    display: flex;
+}
+
+.text{
+    resize: none;
+    color: white;
+    background-color: var(--darker-blue);
+}
+
+.text:focus {
+    outline: none !important;
+  }
+
+.text-editor-lines-numbers.text {
+    
+}
+
+.text-editor-lines-text.text {
 }
