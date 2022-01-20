@@ -1,8 +1,21 @@
 /*
-    TODO: find a way to remove elements from the menu
-    bar when the website is seen on a smaller screen.
+    TODO: Remove elements from the menu bar 
+    when the website is seen on a smaller 
+    screen.
+
+    TODO: Make the text area full page width
+
+    TODO: Make the user able to scroll throught
+    the textarea in the y axis and the x axis.
+
+    TODO: Make the text editor dynamicaly
+    write the number of lines
+
+    TODO: Add a component that will make the 
+    user allow to change the size of the font.
 */
 
+/* General colors */
 :root {
     --dark-blue: rgb(46, 58, 63);
     --dark-blue-shadow: rgb(37, 37, 37);
@@ -21,6 +34,12 @@ body {
     background-color: var(--dark-blue);
 }
 
+footer {
+    background-color: var(--semi-dark-blue);
+}
+
+
+/* Menu bar*/
 nav {
     background-color: var(--semi-dark-blue);
     width: 100%;
@@ -44,15 +63,19 @@ nav ul li h1 a {
     font-weight: 100;
 }
 
+
+/* Design the text editor*/
 .text-editor-container {
     display: flex;
 }
 
-.text{
+.text {
     resize: none;
     color: white;
     background-color: var(--darker-blue);
     border: none;
+    display: inline-block;
+    font-size: 16px;
 }
 
 .coutour-border-editor {
@@ -68,7 +91,21 @@ nav ul li h1 a {
     border-right: 3px solid var(--pale-blue);
     
 }
-
 .text-editor-lines-text.text {
-    text-align:justify;
+    text-align:left;
 }
+
+
+/* Makes the placeholder text italic*/
+::-webkit-input-placeholder {
+    font-style: italic;
+ }
+ :-moz-placeholder {
+    font-style: italic;  
+ }
+ ::-moz-placeholder {
+    font-style: italic;  
+ }
+ :-ms-input-placeholder {  
+    font-style: italic; 
+ }
