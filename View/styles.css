@@ -31,7 +31,7 @@
 }
 
 body {
-    background-color: var(--dark-blue);
+    background-color: var(--darker-blue);
 }
 
 footer {
@@ -94,7 +94,6 @@ nav ul li h1 a {
 .text-editor-lines-text.text {
     text-align:left;
 }
-
 
 /* Makes the placeholder text italic*/
 ::-webkit-input-placeholder {

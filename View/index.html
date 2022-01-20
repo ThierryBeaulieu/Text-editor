@@ -9,8 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../CSS/styles.css">
-
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Your text editor</title>
 </head>
 
@@ -32,12 +31,15 @@
         </nav>
     </header>
 
-    <body style="background-color: red;">
-        <div class="text-editor-container">
+    <body>
+        <div class="text-editor-container" style="margin-top: 10px;">
             <textarea class="text" rows="1" cols="1" readonly></textarea>
             <textarea class="text-editor-lines-numbers text" rows="35" cols="1" readonly placeholder="1"></textarea>
             <textarea class="text" rows="1" cols="1" readonly></textarea>
-            <textarea class="text-editor-lines-text text" style="width: 100%" placeholder="Hello world"></textarea>
+            <textarea id="text-box-area" class="text-editor-lines-text text" style="width: 100%" placeholder="Hello world"></textarea>
         </div>
     </body>
+    
+    <script type="text/javascript" src="index.js"></script>
+
 </html>
